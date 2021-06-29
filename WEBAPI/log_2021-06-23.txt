@@ -1,0 +1,51 @@
+=============	Error Logging	============
+===========	Start	=============
+-----------	createUser	-----------
+2021.06.23 12.37.49	===========
+Client IP:	::1
+Error Message:	Value cannot be null.
+Parameter name: password
+Stack Trace:	   at Utils.HashPassword(String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Utils.cs:line 94
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 152
+2021.06.23 12.37.49	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.06.23 12.39.21	===========
+Client IP:	::1
+Error Message:	Value cannot be null.
+Parameter name: password
+Stack Trace:	   at Utils.HashPassword(String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Utils.cs:line 94
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 152
+2021.06.23 12.39.21	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.06.23 12.41.27	===========
+Client IP:	::1
+Error Message:	Value cannot be null.
+Parameter name: password
+Stack Trace:	   at Utils.HashPassword(String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Utils.cs:line 94
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 152
+2021.06.23 12.41.27	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.06.23 12.52.50	===========
+Client IP:	::1
+Error Message:	Value cannot be null.
+Parameter name: password
+Stack Trace:	   at Utils.HashPassword(String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Utils.cs:line 94
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 152
+2021.06.23 12.52.50	===========
+===========	End	=============
+===========	Start	=============
+-----------	login	-----------
+2021.06.23 14.31.55	===========
+Client IP:	::1
+Error Message:	Value cannot be null.
+Parameter name: password
+Stack Trace:	   at Utils.VerifyHashedPassword(String hashedPassword, String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Utils.cs:line 116
+   at POLIFRONT_WEB_API.App_Code.utilisateur.login(String email, String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 81
+2021.06.23 14.31.55	===========
+===========	End	=============

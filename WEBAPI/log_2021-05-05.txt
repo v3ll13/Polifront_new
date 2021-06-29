@@ -1,0 +1,211 @@
+=============	Error Logging	============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.16.17	===========
+Client IP:	::1
+Error Message:	Value cannot be null.
+Parameter name: password
+Stack Trace:	   at Utils.HashPassword(String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Utils.cs:line 94
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 149
+2021.05.05 14.16.17	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.22.06	===========
+Client IP:	::1
+Error Message:	Value cannot be null.
+Parameter name: password
+Stack Trace:	   at Utils.HashPassword(String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Utils.cs:line 94
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 149
+2021.05.05 14.22.06	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.32.24	===========
+Client IP:	::1
+Error Message:	Value cannot be null.
+Parameter name: password
+Stack Trace:	   at Utils.HashPassword(String password) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Utils.cs:line 94
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 149
+2021.05.05 14.32.24	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.34.55	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 14.34.55	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.37.00	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 14.37.00	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.37.38	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 14.37.38	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.42.34	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 14.42.34	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.42.57	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 14.42.57	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.43.45	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 14.43.45	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.44.16	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 14.44.16	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 14.58.42	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 14.58.42	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.00.41	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.00.41	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.02.42	===========
+Client IP:	::1
+Error Message:	ExecuteNonQuery: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.02.42	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.15.53	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.15.53	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.17.19	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.17.19	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.18.59	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.18.59	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.27.55	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.27.55	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.29.07	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.29.07	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.29.37	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.29.37	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.34.22	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.34.22	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.36.28	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.36.28	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.47.31	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.47.31	===========
+===========	End	=============
+===========	Start	=============
+-----------	createUser	-----------
+2021.05.05 15.48.08	===========
+Client IP:	::1
+Error Message:	Conversion failed when converting date and/or time from character string.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteNonQuery() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 338
+   at POLIFRONT_WEB_API.App_Code.utilisateur.createUser(utilisateur user) in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 160
+2021.05.05 15.48.08	===========
+===========	End	=============

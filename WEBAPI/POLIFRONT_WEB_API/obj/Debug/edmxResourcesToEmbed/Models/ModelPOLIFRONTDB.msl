@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="polifrontdbModelStoreContainer" CdmEntityContainer="PolifrontDBEntities">
+    <EntitySetMapping Name="acc_circ">
+      <EntityTypeMapping TypeName="polifrontdbModel.acc_circ">
+        <MappingFragment StoreEntitySet="acc_circ">
+          <ScalarProperty Name="id_acc_circ" ColumnName="id_acc_circ" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_ac" ColumnName="date_heure_ac" />
+          <ScalarProperty Name="departement_ac" ColumnName="departement_ac" />
+          <ScalarProperty Name="point_ac" ColumnName="point_ac" />
+          <ScalarProperty Name="localite_ac" ColumnName="localite_ac" />
+          <ScalarProperty Name="permis2cond_ac" ColumnName="permis2cond_ac" />
+          <ScalarProperty Name="etats_ivr_ac" ColumnName="etats_ivr_ac" />
+          <ScalarProperty Name="imp_dom_ac" ColumnName="imp_dom_ac" />
+          <ScalarProperty Name="direction_ac" ColumnName="direction_ac" />
+          <ScalarProperty Name="etats_vehic_ac" ColumnName="etats_vehic_ac" />
+          <ScalarProperty Name="rue_ac" ColumnName="rue_ac" />
+          <ScalarProperty Name="commune_ac" ColumnName="commune_ac" />
+          <ScalarProperty Name="ville_ac" ColumnName="ville_ac" />
+          <ScalarProperty Name="description_ac" ColumnName="description_ac" />
+          <ScalarProperty Name="date_enreg_ac" ColumnName="date_enreg_ac" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="action_log">
+      <EntityTypeMapping TypeName="polifrontdbModel.action_log">
+        <MappingFragment StoreEntitySet="action_log">
+          <ScalarProperty Name="id_action_log" ColumnName="id_action_log" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="nom_utils" ColumnName="nom_utils" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="is_notif" ColumnName="is_notif" />
+          <ScalarProperty Name="date_enreg_act" ColumnName="date_enreg_act" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="agressions">
+      <EntityTypeMapping TypeName="polifrontdbModel.agression">
+        <MappingFragment StoreEntitySet="agressions">
+          <ScalarProperty Name="id_agressions" ColumnName="id_agressions" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_agr" ColumnName="date_heure_agr" />
+          <ScalarProperty Name="departement_agr" ColumnName="departement_agr" />
+          <ScalarProperty Name="point_agr" ColumnName="point_agr" />
+          <ScalarProperty Name="localite_agr" ColumnName="localite_agr" />
+          <ScalarProperty Name="typ_agr" ColumnName="typ_agr" />
+          <ScalarProperty Name="nbr_victim_agr" ColumnName="nbr_victim_agr" />
+          <ScalarProperty Name="temoins_agr" ColumnName="temoins_agr" />
+          <ScalarProperty Name="details_agr" ColumnName="details_agr" />
+          <ScalarProperty Name="date_enreg_agr" ColumnName="date_enreg_agr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ass_meur">
+      <EntityTypeMapping TypeName="polifrontdbModel.ass_meur">
+        <MappingFragment StoreEntitySet="ass_meur">
+          <ScalarProperty Name="id_ass_meur" ColumnName="id_ass_meur" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_asm" ColumnName="date_heure_asm" />
+          <ScalarProperty Name="departement_asm" ColumnName="departement_asm" />
+          <ScalarProperty Name="point_asm" ColumnName="point_asm" />
+          <ScalarProperty Name="localite_asm" ColumnName="localite_asm" />
+          <ScalarProperty Name="circonstance_asm" ColumnName="circonstance_asm" />
+          <ScalarProperty Name="nbr2vitim_asm" ColumnName="nbr2vitim_asm" />
+          <ScalarProperty Name="details_victim_asm" ColumnName="details_victim_asm" />
+          <ScalarProperty Name="is_judge" ColumnName="is_judge" />
+          <ScalarProperty Name="nom_juge" ColumnName="nom_juge" />
+          <ScalarProperty Name="rue_asm" ColumnName="rue_asm" />
+          <ScalarProperty Name="commune_asm" ColumnName="commune_asm" />
+          <ScalarProperty Name="ville_asm" ColumnName="ville_asm" />
+          <ScalarProperty Name="medicaux_legal_asm" ColumnName="medicaux legal_asm" />
+          <ScalarProperty Name="morgue_asm" ColumnName="morgue_asm" />
+          <ScalarProperty Name="description_asm" ColumnName="description_asm" />
+          <ScalarProperty Name="date_enreg_asm" ColumnName="date_enreg_asm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contrebandes">
+      <EntityTypeMapping TypeName="polifrontdbModel.contrebande">
+        <MappingFragment StoreEntitySet="contrebande">
+          <ScalarProperty Name="id_contrebande" ColumnName="id_contrebande" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_contb" ColumnName="date_heure_contb" />
+          <ScalarProperty Name="departement_contb" ColumnName="departement_contb" />
+          <ScalarProperty Name="point_contb" ColumnName="point_contb" />
+          <ScalarProperty Name="localite_contb" ColumnName="localite_contb" />
+          <ScalarProperty Name="photo_march_contb" ColumnName="photo_march_contb" />
+          <ScalarProperty Name="typ_marchand_contb" ColumnName="typ_marchand_contb" />
+          <ScalarProperty Name="quantite_contb" ColumnName="quantite_contb" />
+          <ScalarProperty Name="poids_contb" ColumnName="poids_contb" />
+          <ScalarProperty Name="val_monet_contb" ColumnName="val_monet_contb" />
+          <ScalarProperty Name="description_contb" ColumnName="description_contb" />
+          <ScalarProperty Name="moyen_transp_contb" ColumnName="moyen_transp_contb" />
+          <ScalarProperty Name="date_enreg_contb" ColumnName="date_enreg_contb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="enfant_non_acc">
+      <EntityTypeMapping TypeName="polifrontdbModel.enfant_non_acc">
+        <MappingFragment StoreEntitySet="enfant_non_acc">
+          <ScalarProperty Name="id_enfant_non_acc" ColumnName="id_enfant_non_acc" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_ena" ColumnName="date_heure_ena" />
+          <ScalarProperty Name="departement_ena" ColumnName="departement_ena" />
+          <ScalarProperty Name="point_ena" ColumnName="point_ena" />
+          <ScalarProperty Name="localite_ena" ColumnName="localite_ena" />
+          <ScalarProperty Name="provenance_ena" ColumnName="provenance_ena" />
+          <ScalarProperty Name="typ_vulnerabilite_ena" ColumnName="typ_vulnerabilite_ena" />
+          <ScalarProperty Name="referencement_ena" ColumnName="referencement_ena" />
+          <ScalarProperty Name="date_enreg_ena" ColumnName="date_enreg_ena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="faux_doc">
+      <EntityTypeMapping TypeName="polifrontdbModel.faux_doc">
+        <MappingFragment StoreEntitySet="faux_doc">
+          <ScalarProperty Name="id_faux_doc" ColumnName="id_faux_doc" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_fd" ColumnName="date_heure_fd" />
+          <ScalarProperty Name="departement_fd" ColumnName="departement_fd" />
+          <ScalarProperty Name="point_fd" ColumnName="point_fd" />
+          <ScalarProperty Name="localite_fd" ColumnName="localite_fd" />
+          <ScalarProperty Name="photo_fd" ColumnName="photo_fd" />
+          <ScalarProperty Name="typ_doc_fd" ColumnName="typ_doc_fd" />
+          <ScalarProperty Name="motifs_fd" ColumnName="motifs_fd" />
+          <ScalarProperty Name="desription_fd" ColumnName="desription_fd" />
+          <ScalarProperty Name="date_enreg_fd" ColumnName="date_enreg_fd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="grades">
+      <EntityTypeMapping TypeName="polifrontdbModel.grade">
+        <MappingFragment StoreEntitySet="grade">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="niveau" ColumnName="niveau" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="date_insert" ColumnName="date_insert" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="migrant_intero_dossier">
+      <EntityTypeMapping TypeName="polifrontdbModel.migrant_intero_dossier">
+        <MappingFragment StoreEntitySet="migrant_intero_dossier">
+          <ScalarProperty Name="id_mig_interp_doss" ColumnName="id_mig_interp_doss" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="photo_migrant" ColumnName="photo_migrant" />
+          <ScalarProperty Name="nom_migrant" ColumnName="nom_migrant" />
+          <ScalarProperty Name="prenom_migrant" ColumnName="prenom_migrant" />
+          <ScalarProperty Name="surnom_migrant" ColumnName="surnom_migrant" />
+          <ScalarProperty Name="ethnicite_migrant" ColumnName="ethnicite_migrant" />
+          <ScalarProperty Name="sexe_migrant" ColumnName="sexe_migrant" />
+          <ScalarProperty Name="dat2naiss_migrant" ColumnName="dat2naiss_migrant" />
+          <ScalarProperty Name="age_migrant" ColumnName="age_migrant" />
+          <ScalarProperty Name="nationalite_migrant" ColumnName="nationalite_migrant" />
+          <ScalarProperty Name="pas2piece" ColumnName="pas2piece" />
+          <ScalarProperty Name="cin_migrant" ColumnName="cin_migrant" />
+          <ScalarProperty Name="passeport_migrant" ColumnName="passeport_migrant" />
+          <ScalarProperty Name="permis2cond_migrant" ColumnName="permis2cond_migrant" />
+          <ScalarProperty Name="nif_migrant" ColumnName="nif_migrant" />
+          <ScalarProperty Name="nom_aut_piec_mig1" ColumnName="nom_aut_piec_mig1" />
+          <ScalarProperty Name="num_aut_piec_mig1" ColumnName="num_aut_piec_mig1" />
+          <ScalarProperty Name="nom_aut_piec_mig2" ColumnName="nom_aut_piec_mig2" />
+          <ScalarProperty Name="num_aut_piec_migr2" ColumnName="num_aut_piec_migr2" />
+          <ScalarProperty Name="adress_migrant1" ColumnName="adress_migrant1" />
+          <ScalarProperty Name="adress_migrant2" ColumnName="adress_migrant2" />
+          <ScalarProperty Name="adress_migrant3" ColumnName="adress_migrant3" />
+          <ScalarProperty Name="num_tel_migrant1" ColumnName="num_tel_migrant1" />
+          <ScalarProperty Name="num_tel_migrant2" ColumnName="num_tel_migrant2" />
+          <ScalarProperty Name="num_tel_migrant3" ColumnName="num_tel_migrant3" />
+          <ScalarProperty Name="description_vestim" ColumnName="description_vestim" />
+          <ScalarProperty Name="remarques" ColumnName="remarques" />
+          <ScalarProperty Name="date_enreg_migrant" ColumnName="date_enreg_migrant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="oper_conj">
+      <EntityTypeMapping TypeName="polifrontdbModel.oper_conj">
+        <MappingFragment StoreEntitySet="oper_conj">
+          <ScalarProperty Name="id_oper_conj" ColumnName="id_oper_conj" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp_oc" ColumnName="numero_interp_oc" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_oc" ColumnName="date_heure_oc" />
+          <ScalarProperty Name="departement_oc" ColumnName="departement_oc" />
+          <ScalarProperty Name="point_oc" ColumnName="point_oc" />
+          <ScalarProperty Name="localite_oc" ColumnName="localite_oc" />
+          <ScalarProperty Name="is_partenaire" ColumnName="is_partenaire" />
+          <ScalarProperty Name="Douanes" ColumnName="Douanes" />
+          <ScalarProperty Name="Immigration" ColumnName="Immigration" />
+          <ScalarProperty Name="BLTS" ColumnName="BLTS" />
+          <ScalarProperty Name="date_enreg_oc" ColumnName="date_enreg_oc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="passeur_suspecte">
+      <EntityTypeMapping TypeName="polifrontdbModel.passeur_suspecte">
+        <MappingFragment StoreEntitySet="passeur_suspecte">
+          <ScalarProperty Name="id_pass_susp" ColumnName="id_pass_susp" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_ps" ColumnName="date_heure_ps" />
+          <ScalarProperty Name="departement_ps" ColumnName="departement_ps" />
+          <ScalarProperty Name="point_ps" ColumnName="point_ps" />
+          <ScalarProperty Name="localite_ps" ColumnName="localite_ps" />
+          <ScalarProperty Name="provenance_ps" ColumnName="provenance_ps" />
+          <ScalarProperty Name="destination_ps" ColumnName="destination_ps" />
+          <ScalarProperty Name="nbr2victim_ps" ColumnName="nbr2victim_ps" />
+          <ScalarProperty Name="date_enreg_ps" ColumnName="date_enreg_ps" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="saisi_argent">
+      <EntityTypeMapping TypeName="polifrontdbModel.saisi_argent">
+        <MappingFragment StoreEntitySet="saisi_argent">
+          <ScalarProperty Name="id_saisi_argent" ColumnName="id_saisi_argent" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_sa" ColumnName="date_heure_sa" />
+          <ScalarProperty Name="departement_sa" ColumnName="departement_sa" />
+          <ScalarProperty Name="point_sa" ColumnName="point_sa" />
+          <ScalarProperty Name="localite_sa" ColumnName="localite_sa" />
+          <ScalarProperty Name="devise_sa" ColumnName="devise_sa" />
+          <ScalarProperty Name="autres_devise_sa" ColumnName="autres_devise_sa" />
+          <ScalarProperty Name="quantite_sa" ColumnName="quantite_sa" />
+          <ScalarProperty Name="photo_sa" ColumnName="photo_sa" />
+          <ScalarProperty Name="date_enreg_sa" ColumnName="date_enreg_sa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suivis">
+      <EntityTypeMapping TypeName="polifrontdbModel.suivi">
+        <MappingFragment StoreEntitySet="suivi">
+          <ScalarProperty Name="id_suivi" ColumnName="id_suivi" />
+          <ScalarProperty Name="id_utilisateur" ColumnName="id_utilisateur" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="numero_interpellation" ColumnName="numero_interpellation" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="date_suivi" ColumnName="date_suivi" />
+          <ScalarProperty Name="date_enreg_suivi" ColumnName="date_enreg_suivi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="traf_sus_pers">
+      <EntityTypeMapping TypeName="polifrontdbModel.traf_sus_pers">
+        <MappingFragment StoreEntitySet="traf_sus_pers">
+          <ScalarProperty Name="id_traf_sus_pers" ColumnName="id_traf_sus_pers" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_tsp" ColumnName="date_heure_tsp" />
+          <ScalarProperty Name="departement_tsp" ColumnName="departement_tsp" />
+          <ScalarProperty Name="point_tsp" ColumnName="point_tsp" />
+          <ScalarProperty Name="localite_tsp" ColumnName="localite_tsp" />
+          <ScalarProperty Name="provenance_tsp" ColumnName="provenance_tsp" />
+          <ScalarProperty Name="destination_tsp" ColumnName="destination_tsp" />
+          <ScalarProperty Name="nbr2victim_tsp" ColumnName="nbr2victim_tsp" />
+          <ScalarProperty Name="date_enreg_tsp" ColumnName="date_enreg_tsp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="traffic_armes">
+      <EntityTypeMapping TypeName="polifrontdbModel.traffic_armes">
+        <MappingFragment StoreEntitySet="traffic_armes">
+          <ScalarProperty Name="id_traffic_armes" ColumnName="id_traffic_armes" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_taf" ColumnName="date_heure_taf" />
+          <ScalarProperty Name="departement_taf" ColumnName="departement_taf" />
+          <ScalarProperty Name="point_taf" ColumnName="point_taf" />
+          <ScalarProperty Name="localite_taf" ColumnName="localite_taf" />
+          <ScalarProperty Name="photo_obj_taf" ColumnName="photo_obj_taf" />
+          <ScalarProperty Name="type_armes_taf" ColumnName="type_armes_taf" />
+          <ScalarProperty Name="marque_taf" ColumnName="marque_taf" />
+          <ScalarProperty Name="calibre_taf" ColumnName="calibre_taf" />
+          <ScalarProperty Name="is_charged_taf" ColumnName="is_charged_taf" />
+          <ScalarProperty Name="numero_series_taf" ColumnName="numero_series_taf" />
+          <ScalarProperty Name="quantite_taf" ColumnName="quantite_taf" />
+          <ScalarProperty Name="description_taf" ColumnName="description_taf" />
+          <ScalarProperty Name="valeur_monetaire_taf" ColumnName="valeur_monetaire_taf" />
+          <ScalarProperty Name="lieu_saisi_taf" ColumnName="lieu_saisi_taf" />
+          <ScalarProperty Name="date_enreg_taf" ColumnName="date_enreg_taf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="traffic_munitions">
+      <EntityTypeMapping TypeName="polifrontdbModel.traffic_munitions">
+        <MappingFragment StoreEntitySet="traffic_munitions">
+          <ScalarProperty Name="id_traffic_munitions" ColumnName="id_traffic_munitions" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_tm" ColumnName="date_heure_tm" />
+          <ScalarProperty Name="departement_tm" ColumnName="departement_tm" />
+          <ScalarProperty Name="point_tm" ColumnName="point_tm" />
+          <ScalarProperty Name="localite_tm" ColumnName="localite_tm" />
+          <ScalarProperty Name="photo_obj_tm" ColumnName="photo_obj_tm" />
+          <ScalarProperty Name="type_munit_tm" ColumnName="type_munit_tm" />
+          <ScalarProperty Name="autres_tm" ColumnName="autres_tm" />
+          <ScalarProperty Name="referencement_tm" ColumnName="referencement_tm" />
+          <ScalarProperty Name="date_enreg_tm" ColumnName="date_enreg_tm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="traverse_frontiere">
+      <EntityTypeMapping TypeName="polifrontdbModel.traverse_frontiere">
+        <MappingFragment StoreEntitySet="traverse_frontiere">
+          <ScalarProperty Name="id_trav_front" ColumnName="id_trav_front" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_tf" ColumnName="date_heure_tf" />
+          <ScalarProperty Name="departement_tf" ColumnName="departement_tf" />
+          <ScalarProperty Name="point_tf" ColumnName="point_tf" />
+          <ScalarProperty Name="localite_tf" ColumnName="localite_tf" />
+          <ScalarProperty Name="provenance_tf" ColumnName="provenance_tf" />
+          <ScalarProperty Name="destination_tf" ColumnName="destination_tf" />
+          <ScalarProperty Name="motif2deplac_tf" ColumnName="motif2deplac_tf" />
+          <ScalarProperty Name="poids_marchand" ColumnName="poids_marchand" />
+          <ScalarProperty Name="valeur_monnaie_marcahnd" ColumnName="valeur_monnaie_marcahnd" />
+          <ScalarProperty Name="date_enreg_tf" ColumnName="date_enreg_tf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="typ2drogue">
+      <EntityTypeMapping TypeName="polifrontdbModel.typ2drogue">
+        <MappingFragment StoreEntitySet="typ2drogue">
+          <ScalarProperty Name="id_typ2drogue" ColumnName="id_typ2drogue" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_td" ColumnName="date_heure_td" />
+          <ScalarProperty Name="departement_td" ColumnName="departement_td" />
+          <ScalarProperty Name="point_td" ColumnName="point_td" />
+          <ScalarProperty Name="localite_td" ColumnName="localite_td" />
+          <ScalarProperty Name="photo_drogue_td" ColumnName="photo_drogue_td" />
+          <ScalarProperty Name="typ_drogue_td" ColumnName="typ_drogue_td" />
+          <ScalarProperty Name="autres_drogue_td" ColumnName="autres_drogue_td" />
+          <ScalarProperty Name="quantite_td" ColumnName="quantite_td" />
+          <ScalarProperty Name="poids_td" ColumnName="poids_td" />
+          <ScalarProperty Name="val_monet_td" ColumnName="val_monet_td" />
+          <ScalarProperty Name="moyen_transp_td" ColumnName="moyen_transp_td" />
+          <ScalarProperty Name="referencement_td" ColumnName="referencement_td" />
+          <ScalarProperty Name="date_enreg_td" ColumnName="date_enreg_td" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_log">
+      <EntityTypeMapping TypeName="polifrontdbModel.user_log">
+        <MappingFragment StoreEntitySet="user_log">
+          <ScalarProperty Name="id_user_log" ColumnName="id_user_log" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="nom_utils" ColumnName="nom_utils" />
+          <ScalarProperty Name="loginU" ColumnName="loginU" />
+          <ScalarProperty Name="logoutU" ColumnName="logoutU" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="utilisateurs">
+      <EntityTypeMapping TypeName="polifrontdbModel.utilisateur">
+        <MappingFragment StoreEntitySet="utilisateurs">
+          <ScalarProperty Name="id_utilisateur" ColumnName="id_utilisateur" />
+          <ScalarProperty Name="matricule_agent" ColumnName="matricule_agent" />
+          <ScalarProperty Name="nom_utils" ColumnName="nom_utils" />
+          <ScalarProperty Name="prenom_utils" ColumnName="prenom_utils" />
+          <ScalarProperty Name="sexe_utils" ColumnName="sexe_utils" />
+          <ScalarProperty Name="dat2naiss_utils" ColumnName="dat2naiss_utils" />
+          <ScalarProperty Name="grade_agent" ColumnName="grade_agent" />
+          <ScalarProperty Name="email_utils" ColumnName="email_utils" />
+          <ScalarProperty Name="mot2pass_utils" ColumnName="mot2pass_utils" />
+          <ScalarProperty Name="is_active_utils" ColumnName="is_active_utils" />
+          <ScalarProperty Name="date_enreg_utils" ColumnName="date_enreg_utils" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="victim_de_trait_sus">
+      <EntityTypeMapping TypeName="polifrontdbModel.victim_de_trait_sus">
+        <MappingFragment StoreEntitySet="victim_de_trait_sus">
+          <ScalarProperty Name="id_victim_de_trait_sus" ColumnName="id_victim_de_trait_sus" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_vts" ColumnName="date_heure_vts" />
+          <ScalarProperty Name="departement_vts" ColumnName="departement_vts" />
+          <ScalarProperty Name="point_vts" ColumnName="point_vts" />
+          <ScalarProperty Name="localite_vts" ColumnName="localite_vts" />
+          <ScalarProperty Name="provenance_vts" ColumnName="provenance_vts" />
+          <ScalarProperty Name="finalidetedets_vts" ColumnName="finalidetedets_vts" />
+          <ScalarProperty Name="dat2trait_vts" ColumnName="dat2trait_vts" />
+          <ScalarProperty Name="relationavec_traf_vts" ColumnName="relationavec_traf_vts" />
+          <ScalarProperty Name="referencement_vts" ColumnName="referencement_vts" />
+          <ScalarProperty Name="date_enreg_vts" ColumnName="date_enreg_vts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="victimes">
+      <EntityTypeMapping TypeName="polifrontdbModel.victime">
+        <MappingFragment StoreEntitySet="victimes">
+          <ScalarProperty Name="id_victimes" ColumnName="id_victimes" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="nom_vict" ColumnName="nom_vict" />
+          <ScalarProperty Name="prenom_vict" ColumnName="prenom_vict" />
+          <ScalarProperty Name="date2naiss_vict" ColumnName="date2naiss_vict" />
+          <ScalarProperty Name="age_vict" ColumnName="age_vict" />
+          <ScalarProperty Name="sexe_vict" ColumnName="sexe_vict" />
+          <ScalarProperty Name="date_enreg_vict" ColumnName="date_enreg_vict" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="voitures">
+      <EntityTypeMapping TypeName="polifrontdbModel.voiture">
+        <MappingFragment StoreEntitySet="voitures">
+          <ScalarProperty Name="id_voitures" ColumnName="id_voitures" />
+          <ScalarProperty Name="nom_prop" ColumnName="nom_prop" />
+          <ScalarProperty Name="prenom_prop" ColumnName="prenom_prop" />
+          <ScalarProperty Name="marque_voit" ColumnName="marque_voit" />
+          <ScalarProperty Name="modele_voit" ColumnName="modele_voit" />
+          <ScalarProperty Name="année_voit" ColumnName="année_voit" />
+          <ScalarProperty Name="couleur_voit" ColumnName="couleur_voit" />
+          <ScalarProperty Name="plaque_imm_voit" ColumnName="plaque_imm_voit" />
+          <ScalarProperty Name="numero_moteur" ColumnName="numero_moteur" />
+          <ScalarProperty Name="numero_chassis" ColumnName="numero_chassis" />
+          <ScalarProperty Name="numero_assurance" ColumnName="numero_assurance" />
+          <ScalarProperty Name="numero_enregistrement" ColumnName="numero_enregistrement" />
+          <ScalarProperty Name="date_enreg_voit" ColumnName="date_enreg_voit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vol_de_voiture">
+      <EntityTypeMapping TypeName="polifrontdbModel.vol_de_voiture">
+        <MappingFragment StoreEntitySet="vol_de_voiture">
+          <ScalarProperty Name="id_vol_de_voiture" ColumnName="id_vol_de_voiture" />
+          <ScalarProperty Name="id_utilisateurs" ColumnName="id_utilisateurs" />
+          <ScalarProperty Name="numero_interp" ColumnName="numero_interp" />
+          <ScalarProperty Name="numero_migrant" ColumnName="numero_migrant" />
+          <ScalarProperty Name="date_heure_v2v" ColumnName="date_heure_v2v" />
+          <ScalarProperty Name="departement_v2v" ColumnName="departement_v2v" />
+          <ScalarProperty Name="point_v2v" ColumnName="point_v2v" />
+          <ScalarProperty Name="localite_v2v" ColumnName="localite_v2v" />
+          <ScalarProperty Name="no_permis_v2v" ColumnName="no_permis_v2v" />
+          <ScalarProperty Name="nom_suspect_v2v" ColumnName="nom_suspect_v2v" />
+          <ScalarProperty Name="is_find" ColumnName="is_find" />
+          <ScalarProperty Name="date_enreg_v2v" ColumnName="date_enreg_v2v" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

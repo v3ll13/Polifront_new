@@ -1,0 +1,4 @@
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\bin\x64\x64\Db_Core.dll
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\bin\x64\x64\Db_Core.pdb
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\obj\x64\x64\Db_Core.dll
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\obj\x64\x64\Db_Core.pdb

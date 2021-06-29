@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="polifrontdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="acc_circ">
+    <Key>
+      <PropertyRef Name="id_acc_circ" />
+    </Key>
+    <Property Name="id_acc_circ" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_ac" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_ac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_ac" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_ac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="permis2cond_ac" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="etats_ivr_ac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="imp_dom_ac" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="direction_ac" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="etats_vehic_ac" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="rue_ac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="commune_ac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ville_ac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="description_ac" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date_enreg_ac" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="action_log">
+    <Key>
+      <PropertyRef Name="id_action_log" />
+    </Key>
+    <Property Name="id_action_log" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="nom_utils" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="action" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_notif" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="date_enreg_act" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="agression">
+    <Key>
+      <PropertyRef Name="id_agressions" />
+    </Key>
+    <Property Name="id_agressions" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_agr" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_agr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_agr" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_agr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="typ_agr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nbr_victim_agr" Type="Int32" Nullable="false" />
+    <Property Name="temoins_agr" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="details_agr" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date_enreg_agr" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ass_meur">
+    <Key>
+      <PropertyRef Name="id_ass_meur" />
+    </Key>
+    <Property Name="id_ass_meur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_asm" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_asm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_asm" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_asm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="circonstance_asm" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nbr2vitim_asm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="details_victim_asm" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_judge" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="nom_juge" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="rue_asm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="commune_asm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ville_asm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="medicaux_legal_asm" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="morgue_asm" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="description_asm" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date_enreg_asm" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="contrebande">
+    <Key>
+      <PropertyRef Name="id_contrebande" />
+    </Key>
+    <Property Name="id_contrebande" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_contb" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_contb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_contb" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_contb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="photo_march_contb" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="typ_marchand_contb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="quantite_contb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="poids_contb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="val_monet_contb" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="description_contb" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="moyen_transp_contb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_enreg_contb" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="enfant_non_acc">
+    <Key>
+      <PropertyRef Name="id_enfant_non_acc" />
+    </Key>
+    <Property Name="id_enfant_non_acc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_ena" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_ena" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_ena" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_ena" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="provenance_ena" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="typ_vulnerabilite_ena" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="referencement_ena" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_enreg_ena" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="faux_doc">
+    <Key>
+      <PropertyRef Name="id_faux_doc" />
+    </Key>
+    <Property Name="id_faux_doc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_fd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_fd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_fd" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_fd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="photo_fd" Type="String" MaxLength="750" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="typ_doc_fd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="motifs_fd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="desription_fd" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date_enreg_fd" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="grade">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="niveau" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="date_insert" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="migrant_intero_dossier">
+    <Key>
+      <PropertyRef Name="id_mig_interp_doss" />
+    </Key>
+    <Property Name="id_mig_interp_doss" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="photo_migrant" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nom_migrant" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prenom_migrant" Type="String" MaxLength="75" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="surnom_migrant" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ethnicite_migrant" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sexe_migrant" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dat2naiss_migrant" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="age_migrant" Type="Int32" Nullable="false" />
+    <Property Name="nationalite_migrant" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pas2piece" Type="Binary" MaxLength="1" FixedLength="true" />
+    <Property Name="cin_migrant" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="passeport_migrant" Type="Int32" />
+    <Property Name="permis2cond_migrant" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="nif_migrant" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="nom_aut_piec_mig1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="num_aut_piec_mig1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nom_aut_piec_mig2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="num_aut_piec_migr2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="adress_migrant1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="adress_migrant2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="adress_migrant3" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="num_tel_migrant1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="num_tel_migrant2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="num_tel_migrant3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="description_vestim" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="remarques" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date_enreg_migrant" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="oper_conj">
+    <Key>
+      <PropertyRef Name="id_oper_conj" />
+    </Key>
+    <Property Name="id_oper_conj" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp_oc" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_oc" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_oc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_oc" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_oc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_partenaire" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="Douanes" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="Immigration" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="BLTS" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="date_enreg_oc" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="passeur_suspecte">
+    <Key>
+      <PropertyRef Name="id_pass_susp" />
+    </Key>
+    <Property Name="id_pass_susp" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_ps" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_ps" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_ps" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_ps" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="provenance_ps" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="destination_ps" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nbr2victim_ps" Type="Int32" Nullable="false" />
+    <Property Name="date_enreg_ps" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="saisi_argent">
+    <Key>
+      <PropertyRef Name="id_saisi_argent" />
+    </Key>
+    <Property Name="id_saisi_argent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_sa" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_sa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_sa" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_sa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="devise_sa" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="autres_devise_sa" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="quantite_sa" Type="Int32" Nullable="false" />
+    <Property Name="photo_sa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_enreg_sa" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="suivi">
+    <Key>
+      <PropertyRef Name="id_suivi" />
+    </Key>
+    <Property Name="id_suivi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateur" Type="Int32" />
+    <Property Name="numero_migrant" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="numero_interpellation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="date_suivi" Type="DateTime" Precision="0" />
+    <Property Name="date_enreg_suivi" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="traf_sus_pers">
+    <Key>
+      <PropertyRef Name="id_traf_sus_pers" />
+    </Key>
+    <Property Name="id_traf_sus_pers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_tsp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_tsp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_tsp" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_tsp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="provenance_tsp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="destination_tsp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nbr2victim_tsp" Type="Int32" Nullable="false" />
+    <Property Name="date_enreg_tsp" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="traffic_armes">
+    <Key>
+      <PropertyRef Name="id_traffic_armes" />
+    </Key>
+    <Property Name="id_traffic_armes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_taf" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_taf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_taf" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_taf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="photo_obj_taf" Type="String" MaxLength="750" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="type_armes_taf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="marque_taf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="calibre_taf" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_charged_taf" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="numero_series_taf" Type="Int32" Nullable="false" />
+    <Property Name="quantite_taf" Type="Int32" Nullable="false" />
+    <Property Name="description_taf" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="valeur_monetaire_taf" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="lieu_saisi_taf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_enreg_taf" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="traffic_munitions">
+    <Key>
+      <PropertyRef Name="id_traffic_munitions" />
+    </Key>
+    <Property Name="id_traffic_munitions" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_tm" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_tm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_tm" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_tm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="photo_obj_tm" Type="String" MaxLength="750" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="type_munit_tm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="autres_tm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="referencement_tm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_enreg_tm" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="traverse_frontiere">
+    <Key>
+      <PropertyRef Name="id_trav_front" />
+    </Key>
+    <Property Name="id_trav_front" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_tf" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_tf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_tf" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_tf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="provenance_tf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="destination_tf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="motif2deplac_tf" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="poids_marchand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="valeur_monnaie_marcahnd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_enreg_tf" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="typ2drogue">
+    <Key>
+      <PropertyRef Name="id_typ2drogue" />
+    </Key>
+    <Property Name="id_typ2drogue" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_td" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_td" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_td" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_td" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="photo_drogue_td" Type="String" MaxLength="750" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="typ_drogue_td" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="autres_drogue_td" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="quantite_td" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="poids_td" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="val_monet_td" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="moyen_transp_td" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="referencement_td" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_enreg_td" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="user_log">
+    <Key>
+      <PropertyRef Name="id_user_log" />
+    </Key>
+    <Property Name="id_user_log" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="nom_utils" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="loginU" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="logoutU" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="reason" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="utilisateur">
+    <Key>
+      <PropertyRef Name="id_utilisateur" />
+    </Key>
+    <Property Name="id_utilisateur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="matricule_agent" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="nom_utils" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prenom_utils" Type="String" MaxLength="75" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sexe_utils" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dat2naiss_utils" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="grade_agent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email_utils" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mot2pass_utils" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_active_utils" Type="Byte" Nullable="false" />
+    <Property Name="date_enreg_utils" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="victim_de_trait_sus">
+    <Key>
+      <PropertyRef Name="id_victim_de_trait_sus" />
+    </Key>
+    <Property Name="id_victim_de_trait_sus" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_vts" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_vts" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_vts" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_vts" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="provenance_vts" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="finalidetedets_vts" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dat2trait_vts" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="relationavec_traf_vts" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="referencement_vts" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_enreg_vts" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="victime">
+    <Key>
+      <PropertyRef Name="id_victimes" />
+    </Key>
+    <Property Name="id_victimes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nom_vict" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prenom_vict" Type="String" MaxLength="75" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date2naiss_vict" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="age_vict" Type="Int32" Nullable="false" />
+    <Property Name="sexe_vict" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_enreg_vict" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="voiture">
+    <Key>
+      <PropertyRef Name="id_voitures" />
+    </Key>
+    <Property Name="id_voitures" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom_prop" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prenom_prop" Type="String" MaxLength="75" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="marque_voit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="modele_voit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="année_voit" Type="Int32" Nullable="false" />
+    <Property Name="couleur_voit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="plaque_imm_voit" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_moteur" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_chassis" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_assurance" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="numero_enregistrement" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="date_enreg_voit" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="vol_de_voiture">
+    <Key>
+      <PropertyRef Name="id_vol_de_voiture" />
+    </Key>
+    <Property Name="id_vol_de_voiture" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_utilisateurs" Type="Int32" Nullable="false" />
+    <Property Name="numero_interp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="numero_migrant" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date_heure_v2v" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="departement_v2v" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="point_v2v" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="localite_v2v" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="no_permis_v2v" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nom_suspect_v2v" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="is_find" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="date_enreg_v2v" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="PolifrontDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="acc_circ" EntityType="Self.acc_circ" />
+    <EntitySet Name="action_log" EntityType="Self.action_log" />
+    <EntitySet Name="agressions" EntityType="Self.agression" />
+    <EntitySet Name="ass_meur" EntityType="Self.ass_meur" />
+    <EntitySet Name="contrebandes" EntityType="Self.contrebande" />
+    <EntitySet Name="enfant_non_acc" EntityType="Self.enfant_non_acc" />
+    <EntitySet Name="faux_doc" EntityType="Self.faux_doc" />
+    <EntitySet Name="grades" EntityType="Self.grade" />
+    <EntitySet Name="migrant_intero_dossier" EntityType="Self.migrant_intero_dossier" />
+    <EntitySet Name="oper_conj" EntityType="Self.oper_conj" />
+    <EntitySet Name="passeur_suspecte" EntityType="Self.passeur_suspecte" />
+    <EntitySet Name="saisi_argent" EntityType="Self.saisi_argent" />
+    <EntitySet Name="suivis" EntityType="Self.suivi" />
+    <EntitySet Name="traf_sus_pers" EntityType="Self.traf_sus_pers" />
+    <EntitySet Name="traffic_armes" EntityType="Self.traffic_armes" />
+    <EntitySet Name="traffic_munitions" EntityType="Self.traffic_munitions" />
+    <EntitySet Name="traverse_frontiere" EntityType="Self.traverse_frontiere" />
+    <EntitySet Name="typ2drogue" EntityType="Self.typ2drogue" />
+    <EntitySet Name="user_log" EntityType="Self.user_log" />
+    <EntitySet Name="utilisateurs" EntityType="Self.utilisateur" />
+    <EntitySet Name="victim_de_trait_sus" EntityType="Self.victim_de_trait_sus" />
+    <EntitySet Name="victimes" EntityType="Self.victime" />
+    <EntitySet Name="voitures" EntityType="Self.voiture" />
+    <EntitySet Name="vol_de_voiture" EntityType="Self.vol_de_voiture" />
+  </EntityContainer>
+</Schema>

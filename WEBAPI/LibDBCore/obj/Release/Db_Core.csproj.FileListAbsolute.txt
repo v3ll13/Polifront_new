@@ -1,0 +1,66 @@
+E:\Haiti\2016\Thang 1\Street marketing\LibDBCore\bin\Release\Db_Core.dll
+E:\Haiti\2016\Thang 1\Street marketing\LibDBCore\bin\Release\Db_Core.pdb
+E:\Haiti\2016\Thang 1\Street marketing\LibDBCore\bin\Release\System.Data.OracleClient.dll
+E:\Haiti\2016\Thang 1\Street marketing\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+E:\Haiti\2016\Thang 1\Street marketing\LibDBCore\obj\Release\Db_Core.dll
+E:\Haiti\2016\Thang 1\Street marketing\LibDBCore\obj\Release\Db_Core.pdb
+F:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\Db_Core.dll
+F:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\Db_Core.pdb
+F:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\System.Data.OracleClient.dll
+F:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+F:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.dll
+F:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.pdb
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\Db_Core.dll
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\Db_Core.pdb
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\System.Data.OracleClient.dll
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.dll
+E:\Haiti\SVN\Projects\NhungTTT3\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.pdb
+E:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\Db_Core.dll
+E:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\Db_Core.pdb
+E:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\bin\Release\System.Data.OracleClient.dll
+E:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+E:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.dll
+E:\QT05_15023_VTG_Haiti\Bonus for KD\BonusCalculation\LibDBCore\obj\Release\Db_Core.pdb
+E:\QT05_15023_VTG_Haiti\Bonus for KD\WebAgent\LibDBCore\bin\Release\Db_Core.dll
+E:\QT05_15023_VTG_Haiti\Bonus for KD\WebAgent\LibDBCore\bin\Release\Db_Core.pdb
+E:\QT05_15023_VTG_Haiti\Bonus for KD\WebAgent\LibDBCore\bin\Release\System.Data.OracleClient.dll
+E:\QT05_15023_VTG_Haiti\Bonus for KD\WebAgent\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+E:\QT05_15023_VTG_Haiti\Bonus for KD\WebAgent\LibDBCore\obj\Release\Db_Core.dll
+E:\QT05_15023_VTG_Haiti\Bonus for KD\WebAgent\LibDBCore\obj\Release\Db_Core.pdb
+D:\NATCOM\Projects\DanhTV1\WebAgent\LibDBCore\bin\Release\Db_Core.dll
+D:\NATCOM\Projects\DanhTV1\WebAgent\LibDBCore\bin\Release\Db_Core.pdb
+D:\NATCOM\Projects\DanhTV1\WebAgent\LibDBCore\bin\Release\System.Data.OracleClient.dll
+D:\NATCOM\Projects\DanhTV1\WebAgent\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+D:\NATCOM\Projects\DanhTV1\WebAgent\LibDBCore\obj\Release\Db_Core.dll
+D:\NATCOM\Projects\DanhTV1\WebAgent\LibDBCore\obj\Release\Db_Core.pdb
+D:\NATCOM\PROJECTS\DanhTV1\Admin.ONE\LibDBCore\bin\Release\Db_Core.dll
+D:\NATCOM\PROJECTS\DanhTV1\Admin.ONE\LibDBCore\bin\Release\Db_Core.pdb
+D:\NATCOM\PROJECTS\DanhTV1\Admin.ONE\LibDBCore\bin\Release\System.Data.OracleClient.dll
+D:\NATCOM\PROJECTS\DanhTV1\Admin.ONE\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+D:\NATCOM\PROJECTS\DanhTV1\Admin.ONE\LibDBCore\obj\Release\Db_Core.dll
+D:\NATCOM\PROJECTS\DanhTV1\Admin.ONE\LibDBCore\obj\Release\Db_Core.pdb
+D:\NATCOM\PROJECTS\Admin_ONE\LibDBCore\bin\Release\Db_Core.dll
+D:\NATCOM\PROJECTS\Admin_ONE\LibDBCore\bin\Release\Db_Core.pdb
+D:\NATCOM\PROJECTS\Admin_ONE\LibDBCore\bin\Release\System.Data.OracleClient.dll
+D:\NATCOM\PROJECTS\Admin_ONE\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+D:\NATCOM\PROJECTS\Admin_ONE\LibDBCore\obj\Release\Db_Core.dll
+D:\NATCOM\PROJECTS\Admin_ONE\LibDBCore\obj\Release\Db_Core.pdb
+C:\PROJECTS\Admin_ONE\LibDBCore\bin\Release\Db_Core.dll
+C:\PROJECTS\Admin_ONE\LibDBCore\bin\Release\Db_Core.pdb
+C:\PROJECTS\Admin_ONE\LibDBCore\bin\Release\System.Data.OracleClient.dll
+C:\PROJECTS\Admin_ONE\LibDBCore\obj\Release\Db_Core.csprojResolveAssemblyReference.cache
+C:\PROJECTS\Admin_ONE\LibDBCore\obj\Release\Db_Core.dll
+C:\PROJECTS\Admin_ONE\LibDBCore\obj\Release\Db_Core.pdb
+E:\SVN\UEH_ID\LibDBCore\bin\Release\Db_Core.dll
+E:\SVN\UEH_ID\LibDBCore\bin\Release\Db_Core.pdb
+E:\SVN\UEH_ID\LibDBCore\obj\Release\Db_Core.csprojAssemblyReference.cache
+E:\SVN\UEH_ID\LibDBCore\obj\Release\Db_Core.csproj.CoreCompileInputs.cache
+E:\SVN\UEH_ID\LibDBCore\obj\Release\Db_Core.dll
+E:\SVN\UEH_ID\LibDBCore\obj\Release\Db_Core.pdb
+C:\Users\blow_\source\repos\POLIFRONT_WEB_API\LibDBCore\bin\Release\Db_Core.dll
+C:\Users\blow_\source\repos\POLIFRONT_WEB_API\LibDBCore\bin\Release\Db_Core.pdb
+C:\Users\blow_\source\repos\POLIFRONT_WEB_API\LibDBCore\obj\Release\Db_Core.csprojAssemblyReference.cache
+C:\Users\blow_\source\repos\POLIFRONT_WEB_API\LibDBCore\obj\Release\Db_Core.csproj.CoreCompileInputs.cache
+C:\Users\blow_\source\repos\POLIFRONT_WEB_API\LibDBCore\obj\Release\Db_Core.dll
+C:\Users\blow_\source\repos\POLIFRONT_WEB_API\LibDBCore\obj\Release\Db_Core.pdb

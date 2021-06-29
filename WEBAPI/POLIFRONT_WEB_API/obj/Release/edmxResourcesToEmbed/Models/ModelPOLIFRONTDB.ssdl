@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="polifrontdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="acc_circ">
+    <Key>
+      <PropertyRef Name="id_acc_circ" />
+    </Key>
+    <Property Name="id_acc_circ" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_ac" Type="datetime" Nullable="false" />
+    <Property Name="departement_ac" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_ac" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_ac" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="permis2cond_ac" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="etats_ivr_ac" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="imp_dom_ac" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="direction_ac" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="etats_vehic_ac" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="rue_ac" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="commune_ac" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ville_ac" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="description_ac" Type="text" Nullable="false" />
+    <Property Name="date_enreg_ac" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="action_log">
+    <Key>
+      <PropertyRef Name="id_action_log" />
+    </Key>
+    <Property Name="id_action_log" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="nom_utils" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="action" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="is_notif" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="date_enreg_act" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="agressions">
+    <Key>
+      <PropertyRef Name="id_agressions" />
+    </Key>
+    <Property Name="id_agressions" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_agr" Type="datetime" Nullable="false" />
+    <Property Name="departement_agr" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_agr" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_agr" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="typ_agr" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="nbr_victim_agr" Type="int" Nullable="false" />
+    <Property Name="temoins_agr" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="details_agr" Type="text" Nullable="false" />
+    <Property Name="date_enreg_agr" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ass_meur">
+    <Key>
+      <PropertyRef Name="id_ass_meur" />
+    </Key>
+    <Property Name="id_ass_meur" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_asm" Type="datetime" Nullable="false" />
+    <Property Name="departement_asm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_asm" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_asm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="circonstance_asm" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="nbr2vitim_asm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="details_victim_asm" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="is_judge" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="nom_juge" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="rue_asm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="commune_asm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ville_asm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="medicaux legal_asm" Type="text" Nullable="false" />
+    <Property Name="morgue_asm" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="description_asm" Type="text" Nullable="false" />
+    <Property Name="date_enreg_asm" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="contrebande">
+    <Key>
+      <PropertyRef Name="id_contrebande" />
+    </Key>
+    <Property Name="id_contrebande" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_contb" Type="datetime" Nullable="false" />
+    <Property Name="departement_contb" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_contb" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_contb" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="photo_march_contb" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="typ_marchand_contb" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="quantite_contb" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="poids_contb" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="val_monet_contb" Type="nvarchar" MaxLength="150" />
+    <Property Name="description_contb" Type="text" Nullable="false" />
+    <Property Name="moyen_transp_contb" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="date_enreg_contb" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="enfant_non_acc">
+    <Key>
+      <PropertyRef Name="id_enfant_non_acc" />
+    </Key>
+    <Property Name="id_enfant_non_acc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_ena" Type="datetime" Nullable="false" />
+    <Property Name="departement_ena" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_ena" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_ena" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="provenance_ena" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="typ_vulnerabilite_ena" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="referencement_ena" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="date_enreg_ena" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="faux_doc">
+    <Key>
+      <PropertyRef Name="id_faux_doc" />
+    </Key>
+    <Property Name="id_faux_doc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_fd" Type="datetime" Nullable="false" />
+    <Property Name="departement_fd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_fd" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_fd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="photo_fd" Type="nvarchar" MaxLength="750" Nullable="false" />
+    <Property Name="typ_doc_fd" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="motifs_fd" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="desription_fd" Type="text" Nullable="false" />
+    <Property Name="date_enreg_fd" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="grade">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="niveau" Type="int" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+    <Property Name="date_insert" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="migrant_intero_dossier">
+    <Key>
+      <PropertyRef Name="id_mig_interp_doss" />
+    </Key>
+    <Property Name="id_mig_interp_doss" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="photo_migrant" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="nom_migrant" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="prenom_migrant" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="surnom_migrant" Type="nvarchar" MaxLength="50" />
+    <Property Name="ethnicite_migrant" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="sexe_migrant" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="dat2naiss_migrant" Type="date" Nullable="false" />
+    <Property Name="age_migrant" Type="int" Nullable="false" />
+    <Property Name="nationalite_migrant" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="pas2piece" Type="binary" MaxLength="1" />
+    <Property Name="cin_migrant" Type="nvarchar" MaxLength="25" />
+    <Property Name="passeport_migrant" Type="int" />
+    <Property Name="permis2cond_migrant" Type="nvarchar" MaxLength="15" />
+    <Property Name="nif_migrant" Type="nvarchar" MaxLength="13" />
+    <Property Name="nom_aut_piec_mig1" Type="nvarchar" MaxLength="100" />
+    <Property Name="num_aut_piec_mig1" Type="nvarchar" MaxLength="100" />
+    <Property Name="nom_aut_piec_mig2" Type="nvarchar" MaxLength="100" />
+    <Property Name="num_aut_piec_migr2" Type="nvarchar" MaxLength="100" />
+    <Property Name="adress_migrant1" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="adress_migrant2" Type="nvarchar" MaxLength="250" />
+    <Property Name="adress_migrant3" Type="nvarchar" MaxLength="250" />
+    <Property Name="num_tel_migrant1" Type="nvarchar" MaxLength="30" />
+    <Property Name="num_tel_migrant2" Type="nvarchar" MaxLength="30" />
+    <Property Name="num_tel_migrant3" Type="nvarchar" MaxLength="30" />
+    <Property Name="description_vestim" Type="text" Nullable="false" />
+    <Property Name="remarques" Type="text" Nullable="false" />
+    <Property Name="date_enreg_migrant" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="oper_conj">
+    <Key>
+      <PropertyRef Name="id_oper_conj" />
+    </Key>
+    <Property Name="id_oper_conj" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp_oc" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_oc" Type="datetime" Nullable="false" />
+    <Property Name="departement_oc" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_oc" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_oc" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="is_partenaire" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="Douanes" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="Immigration" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="BLTS" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="date_enreg_oc" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="passeur_suspecte">
+    <Key>
+      <PropertyRef Name="id_pass_susp" />
+    </Key>
+    <Property Name="id_pass_susp" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_ps" Type="datetime" Nullable="false" />
+    <Property Name="departement_ps" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_ps" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_ps" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="provenance_ps" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="destination_ps" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="nbr2victim_ps" Type="int" Nullable="false" />
+    <Property Name="date_enreg_ps" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="saisi_argent">
+    <Key>
+      <PropertyRef Name="id_saisi_argent" />
+    </Key>
+    <Property Name="id_saisi_argent" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_sa" Type="datetime" Nullable="false" />
+    <Property Name="departement_sa" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_sa" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_sa" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="devise_sa" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="autres_devise_sa" Type="nvarchar" MaxLength="25" />
+    <Property Name="quantite_sa" Type="int" Nullable="false" />
+    <Property Name="photo_sa" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="date_enreg_sa" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="suivi">
+    <Key>
+      <PropertyRef Name="id_suivi" />
+    </Key>
+    <Property Name="id_suivi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateur" Type="int" />
+    <Property Name="numero_migrant" Type="varchar" MaxLength="255" />
+    <Property Name="numero_interpellation" Type="varchar" MaxLength="255" />
+    <Property Name="description" Type="varchar" MaxLength="4000" />
+    <Property Name="date_suivi" Type="datetime2" Precision="0" />
+    <Property Name="date_enreg_suivi" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="traf_sus_pers">
+    <Key>
+      <PropertyRef Name="id_traf_sus_pers" />
+    </Key>
+    <Property Name="id_traf_sus_pers" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_tsp" Type="datetime" Nullable="false" />
+    <Property Name="departement_tsp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_tsp" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_tsp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="provenance_tsp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="destination_tsp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="nbr2victim_tsp" Type="int" Nullable="false" />
+    <Property Name="date_enreg_tsp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="traffic_armes">
+    <Key>
+      <PropertyRef Name="id_traffic_armes" />
+    </Key>
+    <Property Name="id_traffic_armes" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_taf" Type="datetime" Nullable="false" />
+    <Property Name="departement_taf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_taf" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_taf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="photo_obj_taf" Type="nvarchar" MaxLength="750" Nullable="false" />
+    <Property Name="type_armes_taf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="marque_taf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="calibre_taf" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="is_charged_taf" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="numero_series_taf" Type="int" Nullable="false" />
+    <Property Name="quantite_taf" Type="int" Nullable="false" />
+    <Property Name="description_taf" Type="text" Nullable="false" />
+    <Property Name="valeur_monetaire_taf" Type="money" />
+    <Property Name="lieu_saisi_taf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="date_enreg_taf" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="traffic_munitions">
+    <Key>
+      <PropertyRef Name="id_traffic_munitions" />
+    </Key>
+    <Property Name="id_traffic_munitions" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_tm" Type="datetime" Nullable="false" />
+    <Property Name="departement_tm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_tm" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_tm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="photo_obj_tm" Type="nvarchar" MaxLength="750" Nullable="false" />
+    <Property Name="type_munit_tm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="autres_tm" Type="nvarchar" MaxLength="50" />
+    <Property Name="referencement_tm" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="date_enreg_tm" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="traverse_frontiere">
+    <Key>
+      <PropertyRef Name="id_trav_front" />
+    </Key>
+    <Property Name="id_trav_front" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_tf" Type="datetime" Nullable="false" />
+    <Property Name="departement_tf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_tf" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="localite_tf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="provenance_tf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="destination_tf" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="motif2deplac_tf" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="poids_marchand" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="valeur_monnaie_marcahnd" Type="nvarchar" MaxLength="50" />
+    <Property Name="date_enreg_tf" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="typ2drogue">
+    <Key>
+      <PropertyRef Name="id_typ2drogue" />
+    </Key>
+    <Property Name="id_typ2drogue" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_td" Type="datetime" Nullable="false" />
+    <Property Name="departement_td" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_td" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_td" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="photo_drogue_td" Type="nvarchar" MaxLength="750" Nullable="false" />
+    <Property Name="typ_drogue_td" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="autres_drogue_td" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="quantite_td" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="poids_td" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="val_monet_td" Type="nvarchar" MaxLength="150" />
+    <Property Name="moyen_transp_td" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="referencement_td" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="date_enreg_td" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user_log">
+    <Key>
+      <PropertyRef Name="id_user_log" />
+    </Key>
+    <Property Name="id_user_log" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="nom_utils" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="loginU" Type="datetime" Nullable="false" />
+    <Property Name="logoutU" Type="datetime" Nullable="false" />
+    <Property Name="reason" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="utilisateurs">
+    <Key>
+      <PropertyRef Name="id_utilisateur" />
+    </Key>
+    <Property Name="id_utilisateur" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="matricule_agent" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="nom_utils" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="prenom_utils" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="sexe_utils" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="dat2naiss_utils" Type="date" Nullable="false" />
+    <Property Name="grade_agent" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="email_utils" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="mot2pass_utils" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="is_active_utils" Type="tinyint" Nullable="false" />
+    <Property Name="date_enreg_utils" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="victim_de_trait_sus">
+    <Key>
+      <PropertyRef Name="id_victim_de_trait_sus" />
+    </Key>
+    <Property Name="id_victim_de_trait_sus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_vts" Type="datetime" Nullable="false" />
+    <Property Name="departement_vts" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_vts" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_vts" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="provenance_vts" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="finalidetedets_vts" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="dat2trait_vts" Type="date" Nullable="false" />
+    <Property Name="relationavec_traf_vts" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="referencement_vts" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="date_enreg_vts" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="victimes">
+    <Key>
+      <PropertyRef Name="id_victimes" />
+    </Key>
+    <Property Name="id_victimes" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="nom_vict" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="prenom_vict" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="date2naiss_vict" Type="date" Nullable="false" />
+    <Property Name="age_vict" Type="int" Nullable="false" />
+    <Property Name="sexe_vict" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="date_enreg_vict" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="voitures">
+    <Key>
+      <PropertyRef Name="id_voitures" />
+    </Key>
+    <Property Name="id_voitures" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom_prop" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="prenom_prop" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="marque_voit" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="modele_voit" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="année_voit" Type="int" Nullable="false" />
+    <Property Name="couleur_voit" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="plaque_imm_voit" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="numero_moteur" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="numero_chassis" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="numero_assurance" Type="nvarchar" MaxLength="100" />
+    <Property Name="numero_enregistrement" Type="nvarchar" MaxLength="100" />
+    <Property Name="date_enreg_voit" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vol_de_voiture">
+    <Key>
+      <PropertyRef Name="id_vol_de_voiture" />
+    </Key>
+    <Property Name="id_vol_de_voiture" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_utilisateurs" Type="int" Nullable="false" />
+    <Property Name="numero_interp" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="numero_migrant" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="date_heure_v2v" Type="datetime" Nullable="false" />
+    <Property Name="departement_v2v" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="point_v2v" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="localite_v2v" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="no_permis_v2v" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="nom_suspect_v2v" Type="nvarchar" MaxLength="150" />
+    <Property Name="is_find" Type="binary" MaxLength="1" Nullable="false" />
+    <Property Name="date_enreg_v2v" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="polifrontdbModelStoreContainer">
+    <EntitySet Name="acc_circ" EntityType="Self.acc_circ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="action_log" EntityType="Self.action_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="agressions" EntityType="Self.agressions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ass_meur" EntityType="Self.ass_meur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="contrebande" EntityType="Self.contrebande" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="enfant_non_acc" EntityType="Self.enfant_non_acc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="faux_doc" EntityType="Self.faux_doc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="grade" EntityType="Self.grade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="migrant_intero_dossier" EntityType="Self.migrant_intero_dossier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="oper_conj" EntityType="Self.oper_conj" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="passeur_suspecte" EntityType="Self.passeur_suspecte" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="saisi_argent" EntityType="Self.saisi_argent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="suivi" EntityType="Self.suivi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="traf_sus_pers" EntityType="Self.traf_sus_pers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="traffic_armes" EntityType="Self.traffic_armes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="traffic_munitions" EntityType="Self.traffic_munitions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="traverse_frontiere" EntityType="Self.traverse_frontiere" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="typ2drogue" EntityType="Self.typ2drogue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_log" EntityType="Self.user_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="utilisateurs" EntityType="Self.utilisateurs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="victim_de_trait_sus" EntityType="Self.victim_de_trait_sus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="victimes" EntityType="Self.victimes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="voitures" EntityType="Self.voitures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vol_de_voiture" EntityType="Self.vol_de_voiture" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,91 @@
+=============	Error Logging	============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 10.59.48	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 10.59.48	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 11.09.09	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 11.09.09	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 11.28.19	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 11.28.19	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 11.33.51	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 11.33.51	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 11.42.33	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 11.42.33	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 11.43.28	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 11.43.28	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 11.44.13	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 11.44.13	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 13.07.10	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 13.07.10	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 14.57.00	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 14.57.00	===========
+===========	End	=============
+===========	Start	=============
+-----------	findUsers	-----------
+2021.05.19 14.57.23	===========
+Client IP:	::1
+Error Message:	ExecuteReader: Connection property has not been initialized.
+Stack Trace:	   at Db_Core.SqlStatement.ExecuteReader() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\LibDBCore\SqlStatement.cs:line 286
+   at POLIFRONT_WEB_API.App_Code.utilisateur.findUsers() in C:\Users\Laguerre Vellie\Downloads\POLIFRONT\WEBAPI\POLIFRONT_WEB_API\App_Code\Objects\utilisateur.cs:line 208
+2021.05.19 14.57.23	===========
+===========	End	=============

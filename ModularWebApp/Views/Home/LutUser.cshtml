@@ -1,0 +1,118 @@
+﻿@model IEnumerable<ModularWebApp.Models.LutUsers>
+
+@{
+    ViewBag.Title = "LutUser";
+}
+
+<h2>LutUser</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create", "Create", "Home")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_utilisateurs)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.matricule_agent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nom_utils)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prenom_utils)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sexe_utils)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dat2naiss_utils)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.grade_agent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email_utils)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mot2pass_utils)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.typ_compte)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.is_active_utils)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_enreg_utils)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.affectation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.is_first_login)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mot2pass_utils_defaut)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_utilisateurs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.matricule_agent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nom_utils)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prenom_utils)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sexe_utils)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dat2naiss_utils)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.grade_agent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email_utils)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mot2pass_utils)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.typ_compte)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.is_active_utils)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_enreg_utils)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.affectation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.is_first_login)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mot2pass_utils_defaut)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_utilisateurs }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_utilisateurs }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.id_utilisateurs })
+        </td>
+    </tr>
+}
+
+</table>
